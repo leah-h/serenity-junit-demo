@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import serenityswag.authentication.actions.LoginActions;
 import static serenityswag.authentication.User.STANDARD_USER;
 import serenityswag.inventory.InventoryPage;
+import serenityswag.inventory.ProductListPageObject;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
@@ -24,7 +25,6 @@ public class WhenLoggingOn extends UIInteractionSteps {
     LoginActions login;
 
     InventoryPage inventoryPage;
-
 
     @Test
     public void usersCanLogOnViaTheHomePage() {
